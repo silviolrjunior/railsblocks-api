@@ -1,13 +1,15 @@
-PATH
-  remote: ../railsblocks-common
+GIT
+  remote: git@github.com:gwmoura/railsblocks-common.git
+  revision: b1ecd05c19fc4c7449bf8a927e2f8f5c0aa4b21e
   specs:
     railsblocks-common (0.0.1)
       kaminari
       rails (~> 4.2.3)
       trailblazer
 
-PATH
-  remote: ../railsblocks-tenant
+GIT
+  remote: git@github.com:gwmoura/railsblocks-tenant.git
+  revision: 1f91dcb8225694c87583d2d44eeb476142209c83
   specs:
     railsblocks-tenant (0.0.1)
       rails (~> 4.2.3)
@@ -183,6 +185,3 @@ DEPENDENCIES
   turbolinks
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
-
-BUNDLED WITH
-   1.10.6

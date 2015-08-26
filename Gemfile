@@ -46,5 +46,5 @@ group :development do
 end
 
 # API
-gem 'railsblocks-common', path: '../railsblocks-common'
-gem 'railsblocks-tenant', path: '../railsblocks-tenant'
+gem 'railsblocks-common', git: 'git@github.com:gwmoura/railsblocks-common.git'
+gem 'railsblocks-tenant', git: 'git@github.com:gwmoura/railsblocks-tenant.git'
