@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:gwmoura/railsblocks-common.git
-  revision: b1ecd05c19fc4c7449bf8a927e2f8f5c0aa4b21e
+  revision: aa45f4ae01cc30287ae341ca91598f16a83f8875
   specs:
     railsblocks-common (0.0.1)
       kaminari
@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: git@github.com:gwmoura/railsblocks-tenant.git
-  revision: 1f91dcb8225694c87583d2d44eeb476142209c83
+  revision: 5d38aade54f029d5dfa18384f4b141731f6af69d
   specs:
     railsblocks-tenant (0.0.1)
       rails (~> 4.2.3)
