@@ -1,3 +1,19 @@
+GIT
+  remote: git://github.com/railsblocks/railsblocks-common.git
+  revision: cbecb191fd934df1ddc62e4da072b594586f5a4e
+  specs:
+    railsblocks-common (0.0.1)
+      kaminari
+      rails (~> 4.2.3)
+      trailblazer
+
+GIT
+  remote: git://github.com/railsblocks/railsblocks-tenant.git
+  revision: 4aa9b08b9b96017c650f88f82d9100697ea76d2e
+  specs:
+    railsblocks-tenant (0.0.1)
+      rails (~> 4.2.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -49,6 +65,9 @@ GEM
       execjs
     coffee-script-source (1.9.1.1)
     debug_inspector (0.0.2)
+    disposable (0.1.11)
+      representable (>= 2.2.3, <= 2.3.0)
+      uber
     erubis (2.7.0)
     execjs (2.6.0)
     globalid (0.3.6)
@@ -62,6 +81,9 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (1.8.3)
+    kaminari (0.16.3)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
@@ -72,6 +94,10 @@ GEM
     multi_json (1.11.2)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
+    passenger (5.0.16)
+      rack
+      rake (>= 0.8.1)
+    pg (0.18.2)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -101,6 +127,11 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
     rdoc (4.2.0)
+    reform (2.0.4)
+      disposable (~> 0.1.11)
+      uber (~> 0.0.11)
+    representable (2.3.0)
+      uber (~> 0.0.7)
     sass (3.4.18)
     sass-rails (5.0.3)
       railties (>= 4.0.0, < 5.0)
@@ -122,10 +153,14 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
+    trailblazer (0.3.3)
+      reform (>= 1.2.0)
+      uber (>= 0.0.10)
     turbolinks (2.5.3)
       coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    uber (0.0.15)
     uglifier (2.7.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
@@ -143,7 +178,11 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
+  passenger
+  pg
   rails (= 4.2.3)
+  railsblocks-common!
+  railsblocks-tenant!
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring
