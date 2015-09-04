@@ -21,5 +21,11 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  database: mayhem_production
+  port: <%= ENV["DB_PORT"] || 5432 %>
+  host: <%= ENV["DB_HOST"] || "localhost" %>
+  username: <%= ENV["DB_USERNAME"] || "root" %>
+  password: <%= ENV["DB_PASSWORD"] || "password" %>
+  timeout: <%= ENV["DB_TIMEOUT"] || 5000 %>
+  pool: <%= ENV["DB_POOL"] || 5 %>
