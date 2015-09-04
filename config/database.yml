@@ -22,7 +22,7 @@ test:
 
 production:
   adapter: postgresql
-  database: mayhem_production
+  database: <%= ENV["DB_NAME"] || "railsblocks_api" %>
   port: <%= ENV["DB_PORT"] || 5432 %>
   host: <%= ENV["DB_HOST"] || "localhost" %>
   username: <%= ENV["DB_USERNAME"] || "root" %>
