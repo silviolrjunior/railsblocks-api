@@ -1,0 +1,7 @@
+language: ruby
+cache: bundler
+bundler_args: --without production
+script: bundle exec rspec spec
+rvm:
+  - 2.2.0
+env: CODECLIMATE_REPO_TOKEN=0756c0f48aca0a36a452d17754394ab7596fe061babafaec88c807508d7f4318
